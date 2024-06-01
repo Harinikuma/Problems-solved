@@ -1,0 +1,15 @@
+class duplicateElementinARR {
+    public static void main(String[] args) {
+        int arr[] = {1 ,1 ,4 ,2,4};
+        int i=0;
+        while(i<5){
+        int j = i+1;
+        while(j<5){
+            if(arr[i] == arr[j])
+            System.out.println(arr[i]);
+            j++;
+         } 
+         i++;
+        }
+    }
+}
