@@ -1,0 +1,22 @@
+
+import java.util.*;
+import java.io.*;
+class twoPairSum {
+    public static void main(String[] args) {
+        int arr[] = {1 ,1 ,4 ,2,4};
+        int x = 6;
+        Arrays.sort(arr);
+        int i=0,j= arr.length - 1;
+        int found=0;
+        while(i<j){
+            if ((arr[i]+arr[j]) == x){
+            System.out.println(arr[i]+" "+arr[j]);
+            break;
+            }
+            else if ((arr[i]+arr[j]) < x)
+            i++;
+            else
+            j--;
+        }
+    }
+}
