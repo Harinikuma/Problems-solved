@@ -1,0 +1,23 @@
+
+import java.util.*;
+import java.io.*;
+class DeleteDuplicatesElements {
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 2, 4};
+        int x = 4;
+        Arrays.sort(arr);
+        int i=0,j= i+1;
+        int found=0;
+        int a1[]=new int[x];
+        while(j<x){
+            if (arr[i] != arr[j]){
+            i++;
+            arr[i]=arr[j];
+            }
+            j++;
+        }
+        for(int k=0;k<=i;k++){
+            System.out.println(arr[k]);
+        }
+    }
+}
