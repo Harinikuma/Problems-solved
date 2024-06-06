@@ -1,0 +1,23 @@
+class  KthElementOf2Arr{
+    public static void main(String[] args) {
+        int a[] = {2,3,6,7,9};
+        int b[] = {1,4,8,10};
+        
+        int x=a.length,y=b.length;
+     int c[] = new int[n+m];
+     int v=0;
+     int i=0,j=0;
+     while(i<x && j<y){
+         if(a[i]<b[j]){
+             c[v]=a[i];
+             i++;
+         }
+         else{
+             c[v]=b[j];
+             j++;
+         }
+         v++;
+     }
+     System.out.println(c[v]);
+    }
+}
